@@ -1,0 +1,14 @@
+// Dosis
+@include font-face("Dosis", "../fonts/Dosis/DosisLight", 300, normal);
+@include font-face("Dosis", "../fonts/Dosis/DosisRegular", 400, normal);
+@include font-face("Dosis", "../fonts/Dosis/DosisSemiBold", 600, normal);
+
+// Roboto
+@include font-face("Roboto", "../fonts/Roboto/RobotoRegular", 400, normal);
+@include font-face("Roboto", "../fonts/Roboto/RobotoMedium", 500, normal);
+@include font-face("Roboto", "../fonts/Roboto/RobotoBold", 700, normal);
+
+// Roboto Condensens
+@include font-face("Roboto Condensens", "../fonts/RobotoCondensens/RobotoCondensedRegular", 400, normal);
+@include font-face("Roboto Condensens", "../fonts/RobotoCondensens/RobotoCondensedBold", 700, normal);
+

@@ -1,0 +1,114 @@
+.services{
+    padding: 25px 0 40px 0;
+    // head
+    &__head{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__title{
+        margin-bottom: 45px;
+    }
+
+    &__descr{
+        font-style: normal;
+        font-size: 20px;
+        line-height: calc(24 / 20);
+        color: $textColor;
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        font-size: 15px;
+        line-height: calc(17 / 15);
+        color: #797979;
+        margin-bottom: 40px;
+    }
+
+    // grid
+    &__item{
+        min-height: 310px;
+        padding: 19px;
+        border: 1px solid rgba($mainColor, .2);
+        cursor: pointer;
+
+        @include flex-all-center();
+
+        &:not(:last-child){
+            border-bottom: none;
+        }
+        
+        &:hover{
+            border: 1px solid $accentColor;
+            box-shadow: inset 0px 0px 10px rgba($accentColor, .5);
+
+            .services__item-text{
+                padding: 21px 0 16px 0;
+            }
+
+            .services__item-link,
+            .services__item-text{
+                opacity: 1;
+                height: 100%;
+                overflow: visible;
+            }
+            .services__item-inner{
+                border: 4px solid $accentColor;
+            }
+        }
+    }
+ 
+    &__item-inner{
+        min-height: 270px;
+        padding: 25px 25px;
+        width: 100%;
+        @include flex-all-center;
+        flex-direction: column;
+        border: 4px solid transparent;
+        text-align: center;
+        transition: all .2s ease-in-out;
+    }
+
+    &__item-icon{
+        width: 65px;
+        height: 65px;
+        margin-bottom: 30px;
+    }
+
+    &__item-title{
+        font-family: 'Roboto Condensens', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: calc(19/16);
+        letter-spacing: 2px;
+        color: $textColor;
+        text-transform: uppercase;
+    }
+
+    &__item-text,
+    &__item-link{
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    &__item-text{
+        font-size: 16px;
+        line-height: calc(18 / 16);
+        color: $mainColor;
+        transition: all .3s ease-in-out;
+    }
+
+    &__item-link{
+        display: block;
+        font-family: 'Roboto Condensens', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(19/16);
+        letter-spacing: 2px;
+        color: $accentColor;
+        text-transform: uppercase;
+        text-decoration: underline;
+        transition: all .3s ease-in-out;
+    }
+}

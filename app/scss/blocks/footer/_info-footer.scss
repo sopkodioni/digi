@@ -1,0 +1,26 @@
+.info-footer{
+    padding: 0 50px;
+
+    &__item{
+        a{
+            display: block;
+            &:not(:last-child){
+                margin-bottom: 9px;
+            }
+        }
+    }
+
+    & > *:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: calc(21/18);
+        letter-spacing: 2px;
+        color: $bgColor;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}

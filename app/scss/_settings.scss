@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fontFamily, sans-serif;
+    font-weight: 400;
+    min-width: 320px;
+    overflow-x: hidden;
+    color: $mainColor;
+    background-color: $whiteColor;
+}
+
+img {
+    max-width: 100%;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-reset{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+// Макетные настройки ============================================================================================================================
+.container{
+    padding: 0 20px;
+}

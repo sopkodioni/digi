@@ -1,0 +1,24 @@
+.title{
+    font-family: 'Roboto Condensens', sans-serif;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 2px;
+    color: $accentColor;
+    position: relative;
+    padding-bottom: 25px;
+    text-align: center;
+
+
+    &::after{
+        content: '';
+        display: block;
+        width: 50px;
+        height: 8px;
+        background-color: $accentColor;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+}

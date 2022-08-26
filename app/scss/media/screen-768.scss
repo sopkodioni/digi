@@ -1,0 +1,232 @@
+@media (min-width: 768px) {
+// ============================================================= COMPONENTS ================================================================//
+.container{
+    padding: 0 80px;
+}
+
+
+
+    // general
+    .container{
+        padding: 0 40px;
+    }
+    // ============================================================================================================================== //
+    // MAIN ------------------
+    .main{
+        min-height: 465px;
+    }
+    // ============================================================================================================================== //
+    // main-slider ------------------
+    .main-slider{
+        min-height: 465px;
+        padding: 87px 0 52px 0;
+
+        &__title{
+            margin-bottom: 25px;
+
+            &::after{
+                display: none;
+            }
+        }
+
+        &__text{
+            display: block;
+        }
+
+        .slick-dots{
+            bottom: 52px;
+        }
+    }
+    // ============================================================================================================================== //
+    // CALL
+    .call{
+        min-height: 187px;
+        
+        &__container{
+            flex: 1;
+            max-width: 680px;
+            padding: 0;
+        }
+
+        &__inner{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__box{
+            max-width: 412px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__text{
+            margin: 0;
+        }
+    }
+    // ============================================================================================================================== //
+    // Services
+    .services{
+        padding: 50px 0 0;
+
+        // Head
+        &__head{
+            text-align: left;
+        }
+
+        &__title{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        &__descr{
+            font-size: 24px;
+            padding-bottom: 38px;
+            margin-bottom: 31px;
+            position: relative;
+
+            &::after{
+                margin: 0;
+            }
+        }
+        &__text{
+            font-size: 18px;
+            line-height: calc(24/18);
+        }
+
+        // Grid
+        &__grid{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -40px;
+        }
+        &__item{
+            min-height: 330px;
+            width: 50%;
+            padding: 23px;
+        }
+        &__item-inner{
+            min-height: 288px;
+            padding: 35px 55px;
+        }
+        &__item-icon{
+            margin-bottom: 35px;
+        }
+    } 
+    // ============================================================================================================================== //
+    // Projects
+    .projects{
+        padding: 80px 0;
+        
+        &__title{
+            margin-bottom: 80px;
+        }
+
+        &__grid{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        &__item{
+            min-width: 50%;
+            padding: 0 15px;
+        }
+
+        &__item-inner{
+            left: 13px; top: 13px; right: 13px; bottom: 13px;
+        }
+
+        &__item-img{
+            min-height: 280px;
+        }
+    }
+    // ============================================================================================================================== //
+    // Team
+    .team{
+        padding: 40px 0;
+        
+        &__container{
+            padding: 0 45px !important;
+        }
+
+        &__inner{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__img{
+            min-width: 240px;
+            min-height: 240px;
+            margin-bottom: 0;
+            border-radius: 4px;
+        }
+
+        &__content-wrap{
+            width: 400px;
+            text-align: left;
+        }
+
+        &__title{
+            font-size: 36px;
+            line-height: calc(38/36);
+            text-align: left;
+            padding-bottom: 28px;
+            margin-bottom: 5px;
+            &::after{
+                margin: 0;
+            }
+        }
+
+        &__text{
+            font-size: 18px;
+            line-height: 1;
+        }
+    }
+    // ============================================================================================================================== //
+    // Last news
+    .last-news{
+        &__container{
+            padding: 0 80px !important;
+        }
+
+        &__title{
+            margin-bottom: 50px;
+        }
+    }
+    // ===================================================================================================================================== //
+    // Quotes
+    .quotes{
+        &__container{
+            padding: 0 75px;
+        }
+
+        padding: 50px 0 40px 0;
+
+        &__quote{
+            font-size: 32px;
+            line-height: calc(34/32);
+            margin-bottom: 40px;
+        }
+    }
+    
+    // Footer
+    .footer{
+        padding: 100px 0 56px 0;
+
+        &__title{
+            font-size: 36px;
+            line-height: calc(32/36);
+        }
+
+        &__socials{
+            margin-bottom: 65px;
+        }
+    }
+
+    
+
+}

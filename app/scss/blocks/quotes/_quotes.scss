@@ -1,0 +1,68 @@
+.quotes{
+    padding: 45px 0;
+    margin-bottom: 50px;
+
+    &__item{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__icon{
+        margin-bottom: 40px;
+        width: 33px;
+        height: 33px;
+
+        path{
+            fill: $accentColor;
+        }
+    }
+
+    &__quote{
+        font-size: 24px;
+        line-height: calc(26/24);
+        color: $textColor;
+        margin-bottom: 20px;
+
+        span{
+            color: $accentColor;
+            font-weight: 700;
+        }
+    }
+
+    &__author{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(23/29);
+        letter-spacing: 2px;
+        color: $textColor;
+        margin-bottom: 40px;
+    }
+
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+
+        li{
+            width: 10px;
+            height: 10px;
+            border: 1px solid $accentColor;
+            background-color: $accentColor;
+            border-radius: 50%;
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+
+        .slick-active{
+            border: 1px solid #476E4D;
+            background-color: transparent;
+        }
+
+        button{
+            font-size: 0;
+            border: none;
+            background-color: $accentColor;
+            padding: 0;
+        }
+    }
+}

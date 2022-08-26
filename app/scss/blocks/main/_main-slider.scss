@@ -1,0 +1,108 @@
+.main-slider{
+    min-height: 193px;
+    padding: 36px 0 20px 0;
+    background-color: rgba(#212121, .5);
+    color: $whiteColor;
+    position: relative;
+        
+    &__item{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        width: 243px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 28px;
+        line-height: calc(28px / 28px);
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Roboto Condensens';
+
+        &::after{
+            content:'';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background-color: $whiteColor;
+            margin-top: 20px;
+        }
+    }
+
+    &__text{
+        display: none;
+        font-family: 'Roboto Condensens', sans-serif;
+        max-width: 592px;
+        margin-bottom: 32px;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        line-height: calc(20 / 18);
+        color: $whiteColor;
+    }
+
+    &__btn{
+        display: none;
+        padding: 16px 45px;
+    }
+
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+
+        li{
+            width: 10px;
+            height: 10px;
+            border: 1px solid $accentColor;
+            background-color: $accentColor;
+            border-radius: 50%;
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+
+        .slick-active{
+            border: 1px solid #476E4D;
+            background-color: transparent;
+        }
+
+        button{
+            font-size: 0;
+            border: none;
+            background-color: $accentColor;
+            padding: 0;
+        }
+    }
+
+    .slick-arrow{
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        right: 0;
+        z-index: 5;
+
+        &.slick-prev{
+            background-color: $accentColor;
+            top: calc(50% - 56px);
+
+            &:hover{
+                background-color: $accentHoverColor;
+            }
+        }
+        &.slick-next{
+            background-color: $bgColor;
+            bottom: calc(50% - 56px);
+
+            &:hover{
+                background-color: $bgHoverColor;
+            }
+        }
+    }
+}

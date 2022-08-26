@@ -1,0 +1,33 @@
+.team{
+    padding: 10px 0 40px 0;
+
+    &__img{
+        min-height: 245px;
+        margin-bottom: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__inner{
+        text-align: center;
+    }
+
+    &__title{
+        padding-bottom: 35px;
+        color: $textColor;
+        margin-bottom: 23px;
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: calc(18/16);
+        margin-bottom: 50px;
+    }
+
+    &__btn{
+        padding: 21px 26px;
+        font-size: 20px;
+        line-height: calc(20/18);
+    }
+}
