@@ -1,0 +1,17 @@
+.socials-footer{
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+
+        svg{
+            width: 25px;
+            height: 25px;
+        }
+
+        svg path{
+            fill: $whiteColor;
+            transition: all .2s ease-in-out;
+        }
+    }
+}

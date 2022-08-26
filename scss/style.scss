@@ -1,0 +1,46 @@
+@import 'vars';
+@import 'mixins';
+@import 'libs';
+@import 'fonts';
+@import 'settings';
+
+// Components ---
+@import 'components/btn';
+@import 'components/title';
+@import 'components/modal';
+
+// Header ---
+@import 'blocks/header/header';
+@import 'blocks/header/menu';
+
+
+// Main ---
+@import 'blocks/main/main';
+@import 'blocks/main/main-slider';
+
+// Call ---
+@import 'blocks/call/call';
+
+// Services ---
+@import 'blocks/services/services';
+
+// Projects ---
+@import 'blocks/projects/projects';
+
+// Team ---
+@import 'blocks/team/team';
+
+// Last news ---
+@import 'blocks/last-news/lastnews';
+
+// Quotes ---
+@import 'blocks/quotes/quotes';
+
+// Footer ---
+@import 'blocks/footer/footer';
+
+// Gotop ---
+@import 'blocks/gotop/gotop';
+
+
+@import 'media';

@@ -1,0 +1,106 @@
+.last-news{
+    padding: 40px 0px;
+    background-color: $bgColor;
+
+    &__title{
+        color: $textColor;
+        margin-bottom: 40px;
+    }
+
+    &__grid{
+        display: grid;
+        gap: 20px;
+    }
+
+    &__item{
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4px;
+        
+
+        &:nth-child(1){
+            height: 444px;
+        }
+        &:nth-child(2){
+            height: 340px;
+        }
+        &:nth-child(3){
+            height: 380px;
+        }
+        &:nth-child(4){
+            height: 210px;
+        }
+        &:nth-child(5){
+            height: 200px;
+        }
+        &:nth-child(6){
+            height: 340px;
+        }
+        &:nth-child(7){
+            height: 220px;
+        }
+        &:nth-child(8){
+            height: 435px;
+        }
+    }
+
+    &__item-inner{
+        min-height: 100%;
+        border: 10px solid transparent;
+        border-radius: inherit;
+        background-color: transparent;
+        transition: border .2s ease-in-out, background-color .2s ease-in-out;
+        &:hover{
+            border-color: $accentColor;
+            background-color: rgba($blackColor, .2);
+
+            .last-news__item-label{
+                background-color: $accentColor;
+                color: $whiteColor;
+                bottom: 30px;
+            }
+
+            .last-news__item-info{
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &__item-info{
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -100%);
+        transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+
+        svg path{
+            fill: $whiteColor;
+        }
+    }
+
+    &__item-label{
+        width: 100%;
+        background-color: $whiteColor;
+        padding: 12px 20px;
+        color: $textColor;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all .2s ease-in-out;
+    }
+
+    &__item-title{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(21/18);
+        letter-spacing: 2px;
+    }
+}

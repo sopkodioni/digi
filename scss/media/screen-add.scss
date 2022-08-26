@@ -1,0 +1,49 @@
+@media (min-width: 820px) {
+    // Team
+    .team{
+        &__img{
+            min-width: 300px;
+            min-height: 270px;
+        }
+    }
+
+}
+
+@media (min-width: 882px) {
+    // Team
+    .team{
+        &__img{
+            min-width: 330px;
+            min-height: 270px;
+        }
+    }
+
+}
+
+@media (min-width: 930px) {
+    // Team
+    .team{
+        &__content-wrap{
+            width: 470px;
+        }
+    }
+}
+
+@media (min-width: 970px) {
+    // Team
+    .team{
+        &__content-wrap{
+            width: 500px;
+        }
+    }
+}
+
+@media (min-width: 1050px) {
+    // Projects
+
+    // .projects{
+    //     &__item{
+    //         min-width: 50% !important;
+    //     }
+    // }
+}

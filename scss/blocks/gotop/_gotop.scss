@@ -1,0 +1,36 @@
+.gotop{
+    &__link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: centere;
+        padding: 50px 0;
+    }
+
+    background-color: $bgColor;
+    
+
+    &:hover{
+        background-color: $bgHoverColor;
+    }
+
+    &__title{
+        color: $textColor;
+        font-size: 16px;
+        line-height: calc(19/16);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__icon{
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+
+        svg path{
+            fill: $accentColor;
+        }
+    }
+}

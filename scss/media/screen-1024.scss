@@ -1,0 +1,231 @@
+@media (min-width: 1024px) {
+    // ============================================================= COMPONENTS ================================================================//
+    // general
+    .container{
+        max-width: 1200px;  
+        margin: 0 auto; 
+    }
+
+    // main ------------------------
+    .main{
+        min-height: 623px;
+    }
+
+    .main-slider{
+        min-height: 623px;
+        padding: 100px 0 80px 0;
+
+        &__title{
+            font-size: 84px;
+            line-height: 1;
+            letter-spacing: 2px;
+        }
+        
+        &__btn{
+            margin-bottom: 112px;
+        }
+
+        .slick-dots{
+            bottom: 80px;
+        }
+    }
+    // ============================================================================================================================== //
+    // CALL
+    .call{
+        min-height: 160px;
+
+        &__container{
+            max-width: 940px;
+        }
+
+        &__box{
+            max-width: 500px;
+        }
+
+        &__title{
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        &__text{
+            margin: 0;
+            font-size: 14px;
+            line-height: calc(16 / 14);
+        }
+    }
+    // ============================================================================================================================== //
+    // Services
+    .services{
+        padding: 57px 0 0;
+        // Head
+        &__title{
+            margin-bottom: 60px;
+        }
+        &__descr{
+            line-height: calc(26/24);
+        }
+
+        // Grid
+        &__item{
+            width: 25%;
+            min-height: 310px;
+            padding: 10px 14px;
+
+            &:nth-child(even),
+            &:last-child{
+                border-right: 1px solid rgba($mainColor, .2);
+            }
+            &:not(:last-child){
+                border-bottom: 1px solid rgba($mainColor, .2);
+            }
+            &:nth-child(n + 5){
+                border-top: none;
+            }
+            
+            &:hover{
+                border: 1px solid $accentColor;
+
+                .services__item-icon{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__item-inner{
+            min-height: 290px;
+            padding: 22px 14px 17px 14px;
+        }
+
+        &__item-icon{
+            margin-bottom: 37px;
+        }
+    }
+    // ============================================================================================================================== //
+    // Projects
+    .projects{
+        &__grid{
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        &__item{
+            min-width: 320px;
+        }
+
+        &__item-inner{
+            a{
+                width: 30px;
+                height: 30px;
+
+                &:not(:last-child){
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        &__item-view{
+            padding: 0;
+            margin-top: 5px;
+        }
+    }
+    // ============================================================================================================================== //
+    // Team
+    .team{
+        &__container{
+            max-width: 940px;
+            padding: 0!important;
+        }
+
+        &__img{
+            width: 390px;
+            min-height: 380px;
+        }
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__text{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    // ============================================================================================================================== //
+    // Last news
+    .last-news{
+        &__title{
+            margin-bottom: 90px;
+        }
+        
+        &__grid{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(15, 37px);
+        }
+
+        &__item{
+            &:nth-child(1){
+                grid-row: 1/9;
+            }
+            &:nth-child(2){
+                grid-row: 1/7;
+            }
+            &:nth-child(3){
+                grid-column: auto;
+                grid-row: 1/8;
+            }
+            &:nth-child(4){
+                grid-column: 1;
+                grid-row: 9/13;
+            }
+            &:nth-child(5){
+                grid-row: 7/11;
+            }
+            &:nth-child(6){
+                grid-row: 8/15;
+            }
+            &:nth-child(7){
+                grid-column: 1;
+                grid-row: 13/19;
+            }
+    
+            &:nth-child(8){
+                grid-row: 11/25;
+            }
+        }
+    }
+    // ===================================================================================================================================== //
+    // Quotes
+    .quotes{
+        padding: 80px 0;
+        
+        &__item{
+            margin-bottom: 80px;
+        }
+
+        &__quote{
+            margin-bottom: 45px;
+        }
+
+        
+    }
+
+    // Footer
+    .footer{
+        padding: 110px 0;
+
+        
+    }
+
+    .info-footer{
+        &__item{
+            width: 25%;
+            padding-right: 0;
+            margin-bottom: 0 !important;
+        }
+    }
+
+
+    
+
+}

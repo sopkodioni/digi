@@ -1,0 +1,14 @@
+.btn{
+    // display: none;
+    font-size: 18px;
+    line-height: 1;
+    color: $bgColor;
+    text-transform: uppercase;
+    background-color: $accentColor;
+    border-radius: 3px;
+    transition: background-color .1s ease-in-out;
+
+    &:hover{
+        background-color: $accentHoverColor;
+    }
+}
